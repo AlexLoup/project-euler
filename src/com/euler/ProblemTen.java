@@ -36,9 +36,12 @@ public class ProblemTen {
 
     public static boolean isPrime(int a){
 
-        for (int i = 3; i < a; i+=2){
-            if (a % i == 0 ) {
+
+        for (int i = 3; i<=Math.sqrt(a); i+=2){
+            if (a % i == 0)
+            {
                 return false;
+
             }
         }
 
