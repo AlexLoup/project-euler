@@ -48,15 +48,5 @@ public class ProblemTen {
         return true;
     }
 
-    public static ArrayList<Integer> getNPrimes(int n){
-        ArrayList<Integer> primes = new ArrayList<>();
-
-        for (int i = 1; i < n+1; i++){
-            if (isPrime(i)){
-                primes.add(i);
-            }
-        }
-        return primes;
-    }
 
 }

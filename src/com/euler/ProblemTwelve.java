@@ -25,7 +25,6 @@ public class ProblemTwelve {
         int n = 10000;          //max number of natural numbers
         int max = 500;      //max number of divisors
         int numDiv;
-        ArrayList<Integer> primes = ProblemTen.getNPrimes(100);
 
         ArrayList<Integer> tris = getTriNums(n);
         for (Integer x : tris) {
