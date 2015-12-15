@@ -1,5 +1,6 @@
 package com.euler;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -19,7 +20,7 @@ import java.util.ArrayList;
  *      We can see that 28 is the first triangle number to have over five divisors.
  *      What is the value of the first triangle to have OVER 500 DIVISORS?
  */
-public class Problem012 {
+public class ProblemTwelve {
     public static void main(String[] args) {
         int n = 10000;          //max number of natural numbers
         int max = 500;      //max number of divisors
