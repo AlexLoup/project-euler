@@ -15,5 +15,21 @@ package com.euler;
 public class Problem006 {
     public static void main(String[] args) {
 
+        int n = 100;
+        System.out.println(String.format("The difference between the sum of squares of the first %d natural numbers" +
+                "and the square of the sum is: %d.", n, getSumOfSquares(n)));
+    }
+
+    public static int getSumOfSquares (int n){
+        int sumSquare = 0;
+        double squareSum;
+        int sum = 0;
+        for(int i=1; i <= n; i++){
+            sumSquare += Math.pow(i,2);
+            sum += i;
+        }
+        squareSum = Math.pow(sum,2);
+
+        return ((int)(squareSum - sumSquare));
     }
 }
